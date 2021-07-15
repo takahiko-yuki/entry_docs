@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# mac-dev-apps-install.sh
-# ver. 2021.07.01
-#
 # to use...
 # $ bash ./mac-dev-apps-install.sh
+# 解説は別ドキュメント.
 
 # homebrew
 xcode-select --install;/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)";
@@ -13,17 +11,17 @@ xcode-select --install;/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.
 touch ~/.zshrc;
 
 # git + node.js + nvm
-## intel cpu ver
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc;
-echo '"[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm"' >> ~/.zshrc;  
-echo ' [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zshrc; 
-brew install nvm; source ~/.zshrc; 
+
+## intel cpu ver
+# echo '"[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm"' >> ~/.zshrc;  
+# echo ' [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zshrc; 
 
 ## m1 cpu ver.
-# echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc;
-# echo '"[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm"' >> ~/.zshrc;  
-# echo ' [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zshrc; 
-# brew install nvm; source ~/.zshrc; 
+echo '"[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm"' >> ~/.zshrc;  
+echo ' [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zshrc; 
+
+brew install nvm; source ~/.zshrc; 
 
 ## please execute manually.
 # nvm install stable && nvm install lts/erbium && nvm install lts/dubnium lts/carbon; 
@@ -54,3 +52,6 @@ brew install docker --cask
 # git config --global core.editor emacs
 # $ git config --global user.name "John Doe"
 # $ git config --global user.email johndoe@example.com
+
+# customize zsh
+# いずれ書きます.
