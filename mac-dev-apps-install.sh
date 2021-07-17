@@ -35,23 +35,27 @@ brew install gh
 # with brew cask
 brew install diffmerge --cask
 brew install google-chrome --cask
-brew install google-japanese-ime --cask
 brew install slack --cask
 brew install mysqlworkbench --cask
 brew install sourcetree --cask
 brew install visual-studio-code --cask
+
+# m1 cpu ver. 
+sudo softwareupdate --install-rosetta
+brew install google-japanese-ime --cask
 brew install docker --cask
-
-# m1 cpu only
-# sudo softwareupdate --install-rosetta
-# brew install google-japanese-ime --cask
 # brew install docker --cask
+# brew install google-japanese-ime --cask
 
-# add git setting
-# https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90
-# git config --global core.editor emacs
-# $ git config --global user.name "John Doe"
-# $ git config --global user.email johndoe@example.com
+# git setting for vscode
+# git config --global user.name "John Doe"  # 引数で渡すように.
+# git config --global user.email johndoe@example.com # 引数で渡すように.
+# git config --global core.editor 'code --wait'
+# git config --global merge.tool 'code --wait "$MERGED"'
+
+# 現在のブランチに追跡ブランチが設定されている、かつローカルとリモートのブランチ名が同じである場合に、追跡ブランチに対して push
+# git config --global push.default simple
+# currentに変更すると、現在のブランチと同名のリモートブランチがあれば、そこに push
 
 # customize zsh
 # いずれ書きます.
