@@ -31,6 +31,12 @@ brew install nvm; source ~/.zshrc;
 brew install git
 brew install anyenv
 brew install gh
+brew install java
+
+# jdk symlink
+## https://formulae.brew.sh/formula/openjdk
+## For the system Java wrappers to find this JDK, symlink it with
+sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 ## with brew cask
 brew install diffmerge --cask
