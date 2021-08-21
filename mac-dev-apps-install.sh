@@ -32,13 +32,17 @@ brew install git
 brew install anyenv
 brew install gh
 
-# with brew cask
+## with brew cask
 brew install diffmerge --cask
 brew install google-chrome --cask
 brew install slack --cask
 brew install mysqlworkbench --cask
 brew install sourcetree --cask
 brew install visual-studio-code --cask
+
+## Drawing a UML Diagram in the vscode
+brew install graphviz
+brew install plantuml
 
 # m1 cpu ver. 
 sudo softwareupdate --install-rosetta
