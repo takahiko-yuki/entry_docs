@@ -31,6 +31,12 @@ brew install git
 brew install anyenv
 brew install gh
 brew install java
+brew install z
+
+# package setting
+echo '# z commnad' >> ~/.zshrc;
+echo '. `brew --prefix`/etc/profile.d/z.sh' >> ~/.zshrc;
+echo 'alias j=z' >> ~/.zshrc;
 
 # jdk symlink
 ## https://formulae.brew.sh/formula/openjdk
