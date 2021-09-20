@@ -29,6 +29,7 @@ brew install nvm; source ~/.zshrc;
 # with brew
 brew install git
 brew install anyenv
+brew install direnv
 brew install gh
 brew install java
 
@@ -48,6 +49,19 @@ brew install visual-studio-code --cask
 ## Drawing a UML Diagram in the vscode
 brew install graphviz
 brew install plantuml
+
+# anyenv
+echo 'eval "$(anyenv init -)"' >> ~/.zshrc;  
+source ~/.zshrc
+yes | anyenv install --init
+
+# go
+# $ goenv install -l
+# $ goenv install <version>
+# $ goenv -v
+# $ goenv versions
+# $ goenv rehash
+# $ go version
 
 # m1 cpu ver. 
 sudo softwareupdate --install-rosetta
