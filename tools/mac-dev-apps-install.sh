@@ -13,17 +13,17 @@ touch ~/.zshrc;
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc;
 
 ## intel cpu ver
-# echo '"[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm"' >> ~/.zshrc;  
-# echo ' [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zshrc; 
+# echo '"[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm"' >> ~/.zshrc;
+# echo ' [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zshrc;
 
 ## m1 cpu ver.
-echo '"[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm"' >> ~/.zshrc;  
-echo ' [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zshrc; 
+echo '"[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm"' >> ~/.zshrc;
+echo ' [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zshrc;
 
-brew install nvm; source ~/.zshrc; 
+brew install nvm; source ~/.zshrc;
 
 ## please execute manually.
-# nvm install stable && nvm install lts/erbium && nvm install lts/dubnium lts/carbon; 
+# nvm install stable && nvm install lts/erbium && nvm install lts/dubnium lts/carbon;
 # nvm alias default lts/dubnium
 
 # with brew
@@ -51,13 +51,14 @@ brew install slack --cask
 brew install mysqlworkbench --cask
 brew install sourcetree --cask
 brew install visual-studio-code --cask
+brew install karabiner-elements --cask
 
 ## Drawing a UML Diagram in the vscode
 brew install graphviz
 brew install plantuml
 
 # anyenv
-echo 'eval "$(anyenv init -)"' >> ~/.zshrc;  
+echo 'eval "$(anyenv init -)"' >> ~/.zshrc;
 source ~/.zshrc
 yes | anyenv install --init
 
@@ -69,7 +70,7 @@ yes | anyenv install --init
 # $ goenv rehash
 # $ go version
 
-# m1 cpu ver. 
+# m1 cpu ver.
 sudo softwareupdate --install-rosetta
 brew install google-japanese-ime --cask
 brew install docker --cask
